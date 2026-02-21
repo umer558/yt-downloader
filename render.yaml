@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: yt-downloader-backend
+    env: docker
+    dockerfilePath: backend/Dockerfile
+    dockerContext: backend
+    plan: starter
+    autoDeploy: true
+    envVars: []
+
+  - type: static
+    name: yt-downloader-frontend
+    env: static
+    buildCommand: "cd frontend && npm ci && npm run build"
+    staticPublishPath: frontend/dist
+    plan: free
+    autoDeploy: true

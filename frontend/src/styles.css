@@ -1,0 +1,15 @@
+* { box-sizing: border-box; }
+body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background: #f5f7fb; margin:0; padding:0; }
+.container { min-height:100vh; display:flex; align-items:center; justify-content:center; }
+.card { width:420px; background:white; padding:28px; border-radius:12px; box-shadow: 0 6px 24px rgba(25,30,40,0.08); }
+h1{ margin:0 0 6px 0; font-size:20px }
+.muted{ color:#6b7280; font-size:13px; margin-bottom:14px }
+input{ width:100%; padding:12px 14px; border-radius:8px; border:1px solid #e6e9ef; margin-bottom:12px }
+button{ background:#2563eb; color:white; padding:10px 14px; border-radius:8px; border:none; cursor:pointer }
+button:disabled{ background:#9fb3ff; cursor:not-allowed }
+.status{ margin-top:14px }
+.progress{ background:#eef2ff; height:12px; border-radius:8px; margin-top:8px; overflow:hidden }
+.bar{ height:100%; background:linear-gradient(90deg,#4f46e5,#06b6d4) }
+.percent{ margin-top:6px; font-weight:600 }
+.error{ margin-top:8px; color:#b91c1c }
+.download-link{ display:inline-block; margin-top:8px; color:#064e3b; font-weight:700 }
